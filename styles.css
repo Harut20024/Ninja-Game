@@ -1,0 +1,143 @@
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+.alert {
+  height: 50px;
+  width: 1040px;
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+#MyCanvas {
+  border: 40px solid #B88846;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+}
+
+body {
+  font-family: 'AncientRomeFont', sans-serif;
+  background-image: url('Photos/NInjaGame.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.score-container {
+  font-size: 24px;
+  padding: 10px;
+  background-color: #5c4b36;
+  color: #e0d6cf;
+  border: 2px solid #8f7460;
+  border-radius: 10px;
+  max-width: 1060px; 
+}
+
+.label {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#scoreValue,
+#missesValue,
+#starContainer {
+  padding: 5px 10px;
+  background-color: #c4b7a9;
+  border: 2px solid #8f7460;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#starContainer {
+  padding: 5px;
+  background-color: #e0d6cf; 
+  background-size: 20px 20px;
+  background-position: center;
+}
+
+#starContainer img {
+  width: 20px; 
+  height: 20px; 
+} 
+
+#missesValue img {
+  width: 20px; 
+  height: 20px; 
+}
+
+
+/* range css */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 10px;
+  background-color: #d6b16f;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border: 2px solid #8b4513;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  border: 2px solid #8b4513;
+  border-radius: 50%;
+  cursor: pointer;
+}
